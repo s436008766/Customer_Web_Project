@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <asp:Menu ID="Menu1" runat="server" BorderStyle="Solid" Font-Size="Larger" ForeColor="#3366FF" Orientation="Horizontal">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Location.aspx" Text="Location" Value="Location"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/History.aspx" Text="History" Value="History"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/About_Us.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Products.aspx" Text="Products" Value="Products"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Services.aspx" Text="Services" Value="Services"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Request.aspx" Text="Request" Value="Request"></asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BackColor="#FFCC66" />
+            <StaticMenuItemStyle BackColor="#FFFFCC" HorizontalPadding="65px" VerticalPadding="10px" />
+        </asp:Menu>
+      
+
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
