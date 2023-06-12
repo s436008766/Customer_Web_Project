@@ -11,4 +11,19 @@ public partial class Location : System.Web.UI.Page
     {
 
     }
+
+    protected void Page_PreInit(object sender, EventArgs e)
+    {
+
+        if (Session["theme"] == null)
+        {
+            Theme = "Dark";
+        }
+        else
+        {
+
+            Theme = Session["theme"].ToString();
+
+        }
+    }
 }

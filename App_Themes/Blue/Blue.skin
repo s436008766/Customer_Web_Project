@@ -1,0 +1,4 @@
+﻿
+<asp:Label runat="server"  Font-Bold="true" Font-Italic="true" SkinId="Blue" />
+<asp:Textbox runat="server"  BackColor="Orange" BorderColor="DarkCyan" BorderStyle="Dotted" BorderWidth="2" SkinId="Blue" />
+<asp:DropDownList  runat="server" BackColor="Orange" Font-Italic="true" SkinId="Blue" />

@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2222.master.cs" Inherits="MasterPage2222" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table width="100%">
+            <tr>
+                <td align="center">
+                    <b>Click Button to change Theme</b><br />
+
+                    <asp:Button ID="btnBlue" runat="server" Text="Blue" BackColor="Blue" Font-Bold="true" OnClick="btnBlue_Click" />
+                    <asp:Button ID="btnRed" runat="server" Text="Red" BackColor="Red" Font-Bold="true" OnClick="btnRed_Click" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+        </table>
+    </form>
+</body>
+</html>

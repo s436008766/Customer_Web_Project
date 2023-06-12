@@ -26,8 +26,12 @@
             <StaticMenuItemStyle BackColor="#FFFFCC" HorizontalPadding="65px" VerticalPadding="10px" />
         </asp:Menu>
       
+        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+            <asp:ListItem>Dark</asp:ListItem>
+            <asp:ListItem>Blue</asp:ListItem>
+        </asp:DropDownList>
 
-
+        <asp:Button ID="Button1" runat="server" Text="Refresh" />
 
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         

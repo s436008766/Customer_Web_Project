@@ -11,4 +11,15 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
 
     }
+
+
+
+
+
+
+    protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        Session["theme"] = DropDownList1.SelectedItem.Value;
+        HttpContext.Current.RewritePath(Request.FilePath);
+    }
 }
