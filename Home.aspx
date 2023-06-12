@@ -4,5 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1>Welcome to Hashim's Online Web Portal</h1>
+    <hr />
+    <h2>Use the above navigation menu to visit other pages and use the drop down list to change the theme.</h2>
+
 </asp:Content>
 
